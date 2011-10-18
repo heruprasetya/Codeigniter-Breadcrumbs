@@ -2,8 +2,7 @@
 /*
  * Breadcrumbs Library
  * @author	Przemysław Bobak
- * @copyright (c) 2011 Przemysław Bobak
- * @time_changed 01:10 18 October 2011
+ * @time 01:16 18 October 2011
  *
  *	Usage:
  *
@@ -80,10 +79,12 @@
 	 * Welds together all the variables adding link if set to TRUE and separator
 	 */
 	public function get(){
+		// set empty variables for the breadcrumbs thread
 		$breddy = '';
-		
-		$bb = $this->get_array();
 		$i = 1;
+		// convert variables into an array
+		$bb = $this->get_array();
+		
 		foreach($bb as $row){
 		
 			if($this->show_links==TRUE){
@@ -110,4 +111,5 @@
  
  }
  
-// END of breadcrumbs.php
+/* End of file breadcrumbs.php */
+/* Location: ./application/libraries/breadcrumbs.php */
