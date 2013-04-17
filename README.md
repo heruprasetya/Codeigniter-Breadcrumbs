@@ -4,7 +4,7 @@ Breadcrumbs Library
 ## Usage:
 
 ### Controller
-```
+```php
 // This can be autoloaded //
 $this->load->library('breadcrumbs');
 
@@ -17,7 +17,7 @@ $this->breadcrumbs->method = array('link'=> base_url().'community/people' ,'titl
 $passed_to_view = $this->breadcrumbs->get();
 ```
 ### In your View
-```
+```html
 <div class="path"><?php echo $breadcrumbs ?></div>
 ```
  
